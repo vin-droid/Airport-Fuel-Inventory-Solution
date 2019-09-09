@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This variable contains absolute path of this `airport_fuel_inventory` script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+# Excecute airport_fuel_inventory 
+ruby $DIR/input_handler.rb $1

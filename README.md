@@ -120,38 +120,38 @@ Fuel Available: 123456
 Description - Exit from the program.
 
 ## Setup
-First, install [Ruby](https://www.ruby-lang.org/en/documentation/installation/). Then run the following commands under the `functional_spec` dir.
+First, install [Ruby](https://www.ruby-lang.org/en/documentation/installation/). Then run the following commands.
 
 ```
-functional_spec $ ruby -v # confirm Ruby present
+airport_fuel_inventory $ ruby -v # confirm Ruby present
 ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-darwin17]
-functional_spec $ gem install bundler # install bundler to manage dependencies
-Successfully installed bundler-1.16.1
-Parsing documentation for bundler-1.16.1
-Done installing documentation for bundler after 2 seconds
-1 gem installed
-functional_spec $ bundle install # install dependencies
-...
-...
+airport_fuel_inventory $ chmod +x ./bin/setup # Make executable file
+airport_fuel_inventory $ ./bin/setup  # Executable setup file
+Fetching gem metadata from https://rubygems.org/..........
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies...
+Using rake 10.5.0
+Using bundler 1.17.2
+Using diff-lcs 1.3
+Using rspec-support 3.8.2
+Using rspec-core 3.8.2
+Using rspec-expectations 3.8.4
+Using rspec-mocks 3.8.1
+Using rspec 3.8.0
 Bundle complete! 3 Gemfile dependencies, 8 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
-functional_spec $ 
-
+functional_spec $
 ```
 
 ## Usage
 
-You can run the following commands under the `airport_fuel_inventory` dir to make executable file.
-```
-airport_fuel_inventory $ chmod +x bin/airport_fuel_inventory
-```
-
-Then run the full suite from `airport_fuel_inventory` by doing
-```
-airport_fuel_inventory $ bin/airport_fuel_inventory file_inputs.txt
-```
-
 You can execute run the program and launch the shell
 ```
 airport_fuel_inventory $ bin/airport_fuel_inventory
+
+```
+
+You can run the full test suite from `airport_fuel_inventory` by doing
+```
+airport_fuel_inventory $ rspec ./functional_spec
 ```
