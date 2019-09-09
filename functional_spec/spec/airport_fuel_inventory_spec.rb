@@ -1,5 +1,4 @@
 require 'singleton'
-# Dir[File.join(__dir__, 'bin', '*.rb')]
 require "./bin/airport_fuel_inventory_system.rb" 
 RSpec.describe AirportFuelInventorySystem do
 	let(:airport_fuel_inventory){AirportFuelInventorySystem.instance}

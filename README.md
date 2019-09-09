@@ -147,11 +147,11 @@ functional_spec $
 
 You can execute run the program and launch the shell
 ```
-airport_fuel_inventory $ bin/airport_fuel_inventory
+airport_fuel_inventory $ bin/airport_fuel_inventory_system
 
 ```
 
-You can run the full test suite from `airport_fuel_inventory` by doing
+You can run the full test suite from `airport_fuel_inventory_system` by doing
 ```
 airport_fuel_inventory $ rspec ./functional_spec
 ```
