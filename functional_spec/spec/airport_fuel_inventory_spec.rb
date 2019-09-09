@@ -1,13 +1,13 @@
 require 'singleton'
 # Dir[File.join(__dir__, 'bin', '*.rb')]
-require "./bin/airport_fuel_inventory.rb" 
-RSpec.describe AirportFuelInventory do
-	let(:airport_fuel_inventory){AirportFuelInventory.instance}
+require "./bin/airport_fuel_inventory_system.rb" 
+RSpec.describe AirportFuelInventorySystem do
+	let(:airport_fuel_inventory){AirportFuelInventorySystem.instance}
 	let(:fuel_quantity){200000}
 	let(:airport_id){3}
 	let(:aircrapt){Aircraft.new('6E-102')}
 	before do
-		Singleton.__init__(AirportFuelInventory)
+		Singleton.__init__(AirportFuelInventorySystem)
 		airport_fuel_inventory.initiate_or_reinitiate
 	end
 

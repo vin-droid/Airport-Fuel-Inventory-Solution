@@ -3,4 +3,4 @@ PATH=$PATH:../ bundle
 # This variable contains absolute path of this `airport_fuel_inventory` script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 # Make executable file
-chmod +x $DIR/airport_fuel_inventory
+chmod +x $DIR/airport_fuel_inventory_system
