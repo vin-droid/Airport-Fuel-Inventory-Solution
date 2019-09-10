@@ -128,9 +128,7 @@ ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-darwin17]
 airport_fuel_inventory $ chmod +x ./bin/setup # Make executable file
 airport_fuel_inventory $ ./bin/setup  # Executable setup file
 Fetching gem metadata from https://rubygems.org/..........
-Fetching gem metadata from https://rubygems.org/.
 Resolving dependencies...
-Using rake 10.5.0
 Using bundler 1.17.2
 Using diff-lcs 1.3
 Using rspec-support 3.8.2
@@ -138,19 +136,28 @@ Using rspec-core 3.8.2
 Using rspec-expectations 3.8.4
 Using rspec-mocks 3.8.1
 Using rspec 3.8.0
-Bundle complete! 3 Gemfile dependencies, 8 gems now installed.
+Bundle complete! 1 Gemfile dependency, 7 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
-functional_spec $
 ```
 
 ## Usage
 
-You can execute run the program and launch the shell
+You can execute the program and launch the shell
 ```
 airport_fuel_inventory $ bin/airport_fuel_inventory_system
 
 ```
 
+Enter your Choice:
+```
+0 #Initiate / re-initiate the airport fuel data and shows full fuel summary at all ports.
+1 #Shows fuel available in each airport.
+2 #Takes Airport ID and Fuel as input, then creates transaction and adds to the fuel available.
+3 #Takes Airport ID, Aircraft Code and Fuel as input, then creates a transaction and deduct to the fuel available accordingly.
+4 #Shows Fuel Transaction for All Airport
+9 #Exit from program
+exit #Exit from program
+```
 You can run the full test suite from `airport_fuel_inventory_system` by doing
 ```
 airport_fuel_inventory $ rspec ./functional_spec
